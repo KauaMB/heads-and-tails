@@ -1,0 +1,47 @@
+.coin-button {
+  background-color: #00000000;
+  
+  border: none;
+  border-radius: 100%;
+
+  cursor: pointer;
+ 
+  transition: opacity 0.2s;
+}
+
+.coin-button:hover {
+  opacity: 0.7;
+}
+
+.coin-button:active {
+  opacity: 0.5;
+}
+
+.coin-icon {
+  width: 150px;
+
+  transition: width 0.2s;
+}
+
+.coin-icon:hover {
+  width: 200px;
+}
+
+.choices-container {
+  display: grid;
+  grid-template-rows: 50px 1frs ;
+
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: double;
+  border-color: #ffda0b;
+
+  width: 90%;
+  height: 70vh;
+}
+
+.choices-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

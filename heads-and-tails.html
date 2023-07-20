@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/left-side.css">
+  <link rel="stylesheet" href="styles/right-side.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title>Heads and Tails</title>
+</head>
+
+<body>
+  <div class="fullscreen">
+
+    <div class="title-flex">
+      <button class="reset-score" onclick="
+      totalScore.heads = 0;
+      totalScore.tails = 0;
+      updateScore()">
+        Reset Score
+      </button>
+
+      <p class="title">
+        <img class="title-icon" src="images/heads.png">HEADS AND TAILS<img class="title-icon" src="images/tails.png">
+      </p>
+
+      <p class="js-score score"></p>
+    </div>
+
+
+    <div class="page-container">
+
+      <div class="left-side">
+
+        <div class="choices-container">
+
+          <p class="text">Choose One:</p>
+
+          <div class="choices-flex">
+
+            <div class>
+
+              <button class="coin-button" onclick="randomizerSystem()">
+                <img class="coin-icon" src="images/heads.png" alt="heads icon">
+              </button>
+
+              <p class="text">HEADS</p>
+
+            </div>
+
+            <div>
+
+              <button class="coin-button" onclick="randomizerSystem()">
+                <img class="coin-icon" src="images/tails.png" alt="tails icon">
+              </button>
+
+              <p class="text">TAILS</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="right-side">
+        <div>
+          <img class="js-result-image result-image">
+        </div>
+
+        <div>
+          <p class="js-result-text result-text"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <img class="js-spinning-coin">
+
+  <script src="heads-and-tails.js">
+  </script>
+
+</body>
+
+</html>
