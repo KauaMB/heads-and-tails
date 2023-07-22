@@ -11,6 +11,8 @@ if (savedScore) {
 
 updateScore();
 
+let timeoutID;
+
 function randomizerSystem() {
   let randomNumber = Math.random();
   let result = '';
@@ -32,7 +34,7 @@ function randomizerSystem() {
   document.querySelector('.fullscreen').classList.add('page-blur');
   spinningCoin();
 
-  setTimeout(function () {
+  timeoutID = setTimeout(function () {
     resultImage(result);
   }, 4000);
   setTimeout(removeBlur, 4000);
